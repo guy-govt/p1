@@ -382,7 +382,7 @@ const PortfolioWebsite = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-8">Get In Touch</h2>
           <p className="text-base md:text-lg text-muted-foreground mb-6">
-            I'm always open to new opportunities and interesting projects.
+            I&apos;m always open to new opportunities and interesting projects.
             Feel free to reach out through any of these channels!
           </p>
           <div className="flex justify-center gap-4">
