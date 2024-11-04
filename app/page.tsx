@@ -27,12 +27,12 @@ const PortfolioWebsite = () => {
   ];
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, [slides.length]);
-  
+  const timer = setInterval(() => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  }, 5000);
+  return () => clearInterval(timer);
+}, [slides.length]);
+
   const skills = {
     languages: [
       { name: "JavaScript", proficiency: 90 },
@@ -90,7 +90,7 @@ const PortfolioWebsite = () => {
       author: "Former Client"
     },
     {
-      text: "I appreciated Mohammed Maaz Ul Hasan's ability to tackle complex technical challenges and their collaborative spirit. They consistently communicated effectively, making sure everyone was on the same page, which greatly improved our team's efficiency. Their work was of high quality, and they always went the extra mile to ensure we delivered on time.",
+      text: "I appreciated Mohammed Maaz Ul Hasan&apos;s ability to tackle complex technical challenges and their collaborative spirit. They consistently communicated effectively, making sure everyone was on the same page, which greatly improved our team's efficiency. Their work was of high quality, and they always went the extra mile to ensure we delivered on time.",
       author: "Previous Employer"
     }
   ];
@@ -211,10 +211,10 @@ const PortfolioWebsite = () => {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold mb-8">About Me</h2>
           <p className="text-base md:text-lg text-muted-foreground mb-6">
-            I am a passionate software developer with a strong background in building web applications and solving complex programming challenges. With several years of experience in both startups and larger companies, I've developed a diverse skill set that spans full-stack development, emphasizing clean, scalable, and efficient code.
+            I am a passionate software developer with a strong background in building web applications and solving complex programming challenges. With several years of experience in both startups and larger companies, I&apos;ve developed a diverse skill set that spans full-stack development, emphasizing clean, scalable, and efficient code.
           </p>
           <p className="text-base md:text-lg text-muted-foreground">
-            Beyond coding, I excel in communication and bridge the gap between technical and non-technical stakeholders. I thrive in collaborative environments and am particularly drawn to projects that make a meaningful difference in users' lives.
+            Beyond coding, I excel in communication and bridge the gap between technical and non-technical stakeholders. I thrive in collaborative environments and am particularly drawn to projects that make a meaningful difference in users&apos; lives.
           </p>
         </div>
       </section>
