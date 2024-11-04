@@ -31,8 +31,8 @@ const PortfolioWebsite = () => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, []);
-
+  }, [slides.length]);
+  
   const skills = {
     languages: [
       { name: "JavaScript", proficiency: 90 },
